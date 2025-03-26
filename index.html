@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/devices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Free Currency1!</title>
+
+    <!-- CSS مخصص لتصميم أسطوري -->
+    <style>
+        /* خلفية موحدة للصفحتين بصورة foobloooc */
+        body, .device-content {
+            background: url('img/foobloooc.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* صورة roblooox دائرية واحترافية */
+        .roblox-logo {
+            width: 120px !important;
+            border-radius: 50%;
+            border: 4px solid #8704eb;
+            box-shadow: 0 0 20px #00FF00, 0 0 40px #FFFF00;
+            transition: transform 0.3s ease;
+        }
+
+        .roblox-logo:hover {
+            transform: scale(1.1);
+        }
+
+        /* ستايل العناوين */
+        h2, h5 {
+            color: #FFFFFF;
+            text-shadow: 0 0 15px #00FF00, 0 0 30px #FFFF00;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+        /* ستايل حقل الإدخال */
+        .form-control {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #FFFFFF;
+            border: 2px solid #9f0eff;
+            box-shadow: 0 0 15px rgba(248, 0, 140, 0.8);
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #FFFF00;
+            box-shadow: 0 0 20px rgba(210, 9, 9, 0.9);
+        }
+
+        /* ستايل خانة الهدايا (الـ select) */
+        .reward-select {
+            background-size: cover;
+            color: #2a7eac;
+            border: 2px solid #9e2e2e;
+            box-shadow: 0 0 20px #000000d1, 0 0 40px rgba(255, 255, 0, 0.5);
+            border-radius: 15px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            cursor: pointer;
+        }
+
+        .reward-select option {
+            background-color: #0715125c;
+            color: #FFFFFF;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .reward-select option:hover {
+            background-color: #00FF00;
+            color: #000000;
+        }
+
+        /* ستايل الأزرار */
+        .roblox-btn {
+            background: linear-gradient(45deg, #090e99, #2673e6);
+            color: #000000 !important;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 5px 20px rgba(25, 0, 255, 0.7), 0 0 40px rgba(241, 7, 7, 0.921);
+            transition: all 0.4s ease;
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+
+        .roblox-btn:hover {
+            background: linear-gradient(45deg, #2f00ff, #9b01b9);
+            color: #FFFFFF !important;
+            box-shadow: 0 10px 30px rgba(210, 9, 9, 0.9);
+            transform: translateY(-5px);
+        }
+
+        .roblox-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 3px 15px rgba(0, 255, 0, 0.5);
+        }
+
+        /* تحسينات عامة */
+        .P1, .P2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        hr {
+            border-color: #FFFFFF;
+            box-shadow: 0 0 10px #00FF00;
+        }
+
+        .SCARED, .YESNO {
+            background-color: rgba(231, 16, 16, 0.7);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #00FF00;
+        }
+
+        /* نصوص مفتاحية */
+        strong {
+            color: #FFFF00;
+            text-shadow: 0 0 10px #00FF00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="device device-iphone-x">
+        <div class="device-frame">
+            <div class="device-content">
+                <div class="FLICK">
+                    <div class="FLICK2">
+                        <div class="P1">
+                            <img src="img/robloox.jpeg" class="roblox-logo img-fluid mx-auto">
+                            <h2>Get <strong>currency1</strong> for free! 🎮</h2>
+                            <hr>
+                            <h5><strong>Step 1:</strong> Type in your <strong>MYGAME</strong> username to continue. ✏️</h5>
+                            <input type="text" class="form-control form-control-lg mb-2 pt-4 pb-4" id="robname" placeholder="MYGAME username">
+                            <h5><strong>Step 2:</strong> Select how many <strong>free currency1</strong> do you want. 🎁</h5>
+                            <select class="form-control form-control-lg mx-auto mb-2 reward-select" id="robux">
+                                <option value="">Choose your reward! 🎉</option>
+                                <option value="2500">2500 Legendary Crystals 💎</option>
+                                <option value="5000">5000 Legendary Crystals 💎</option>
+                                <option value="10000">10000 Legendary Crystals 💎</option>
+                                <option value="dominus">Dominus Empyreus Shard 👑</option>
+                                <option value="sparkle">Sparkle Time Fedora + Bonus Wings 🎩</option>
+                                <option value="dragon">Dragon Aura 🐉</option>
+                                <option value="samurai">Samurai Soulblade ⚔️</option>
+                            </select>
+                            <button type="button" class="S1B btn btn-lg btn-block roblox-btn mb-1 mt-1 pt-2 pb-2" onclick="S1();">Continue 🚀</button>
+                        </div>
+
+                        <div class="P2">
+                            <img src="img/robloox.jpeg" class="roblox-logo img-fluid mx-auto">
+                            <h5 id="step34"><strong>Step 3:</strong> Is this <strong>your MYGAME profile</strong>? 👀</h5>
+                            <div class="SCARED">
+                                <h3 class="mb-2 robnames"></h3>
+                                <div class="row justify-content-center">
+                                    <div class="col text-center" style="display: flex !important;"><img class="img-fluid robavatar w-75 mx-auto" style="align-self: center !important;"></div>
+                                    <div class="col text-center"><img class="img-fluid robwearing"></div>
+                                </div>
+                                <h4 class="freerobux"><img class="IR" src="img/cr1.png"> <strong><span id="acc">0</span> free currency1</strong> added... ✨</h4>
+                            </div>
+                            <h4 class="freerobux777"><img class="IR" src="img/cr1.png"> <strong><span id="acc777">0</span> free currency1</strong> added... ✨</h4>
+                            <div class="row justify-content-center mt-2 YESNO">
+                                <div class="col pr-1">
+                                    <button type="button" id="BTNYES" class="S2B1 btn btn-block btn-lg roblox-btn" onclick="SYES();">Yes ✅</button>
+                                </div>
+                                <div class="col pl-1">
+                                    <button type="button" id="BTNNO" class="S2B2 btn btn-block btn-lg roblox-btn" onclick="SNO();">No ❌</button>
+                                </div>
+                            </div>
+                            <button type="button" id="BTNADD" class="S2B3 btn btn-block btn-lg roblox-btn mt-2" onclick="SADD();">Add Now! 🎉</button>
+                            <h5 id="CONS" class="mt-2">Connecting with <strong>MYGAME servers</strong>... ⚡</h5>
+                            <a id="verify-button" href="https://installchecker.com/cl/i/99nlk">
+                                <button type="button" id="VER" class="S2B4 VB btn btn-block btn-lg roblox-btn mt-2"><strong>Verify</strong> 🚀</button>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="rob-bot" src="img/BOTTOM.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="device-stripe"></div>
+        <div class="device-header"></div>
+        <div class="device-sensors"></div>
+        <div class="device-btns"></div>
+        <div class="device-power"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/countUp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
